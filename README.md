@@ -1,2 +1,3 @@
 # Maze-Lab
 Maze lab is a text based game in which a 2D array maze is constructed a user is given the challenge to solve it. User will attempt to go in a certain direction and will get feedback on whether they are on the correct path or not. 
+The program has 2 classes (Maze and Location) interacting with each other and then a 3rd class to run the game. The Location class is used to create objects that can store the row and column of a desired location. The Maze class constructs a 2D array of Strings that represents the maze map. The location for the current position in the maze is stored and the finish position is also stored as a location. The Maze class contains methods to move in each direction and to check if the user has moved to the finish position to win the maze.
