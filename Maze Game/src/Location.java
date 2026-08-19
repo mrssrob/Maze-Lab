@@ -13,55 +13,61 @@ public class Location {
     // constructs a location with row and col starting at 0,0
     public Location()
     {
+        row = 0;
+        col = 0;
+        
         
     }
     
     // constructs a location taking parameters for the row number and column number 
     public Location(int r, int c)
     {
+        row = r;
+        col = c;
         
     }
     
     // updates row to a given row value
     public void updateRow(int r)
     {
+        row = r;
         
     }
     
     // updates col to a given parameter value
     public void updateCol(int c)
     {
-        
+        col = c;
     }
     
     // updates location to move down 1
     public void down()
     {
-        
+        row +=1;
     }
     
     // updates location to move up 1
     public void up()
     {
-        
+        row -= 1;
     }
     
     // updates location to move left 1
     public void left()
     {
-        
+        col -= 1;
     }
     
     // updates location to move right 1
     public void right()
     {
-        
+        col +=1;
     }
     
     // returns a row and col as a string
     public String toString()
     {
-        
+        return "row: "+row+" col: "+col;
     }
 
 }
